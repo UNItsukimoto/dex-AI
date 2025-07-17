@@ -1,0 +1,19 @@
+﻿# Hyperliquid Prediction AI Configuration
+
+project:
+  name: hyperliquid-prediction-ai
+  version: 1.0.0
+
+data:
+  symbol: BTC
+  interval: 1h
+  lookback_days: 30
+
+model:
+  sequence_length: 24
+  prediction_horizon: 6
+  
+training:
+  epochs: 200
+  batch_size: 32
+  learning_rate: 0.001
