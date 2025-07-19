@@ -65,6 +65,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb_checkpoints/
 
 # pyenv
 .python-version
@@ -78,6 +79,8 @@ celerybeat-schedule
 # Environments
 .env
 .venv
+.env.local
+.env.*.local
 env/
 venv/
 ENV/
@@ -116,26 +119,29 @@ ehthumbs.db
 Thumbs.db
 
 # Project specific
+data/raw/
+data/processed/
+data/cache/
+data/models/
+logs/
+models/*/
+results/*/
+*.csv
+*.pkl
+*.h5
+*.pth
+*.params
+*.onnx
 *.png
 *.jpg
 *.jpeg
 *.gif
-*.csv
 *.json
-*.pkl
-*.pth
 *.backup
-nul
-
-# Data directories
-data/raw/
-data/processed/
-data/cache/
-logs/
-models/*/
-results/*/
 
 # Temporary files
 *.tmp
 *.temp
+*.bak
 current_prediction.json
+nul
